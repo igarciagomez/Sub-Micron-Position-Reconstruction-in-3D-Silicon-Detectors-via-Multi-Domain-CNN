@@ -15,7 +15,7 @@ This repository contains the complete deep learning pipeline for high-precision 
 ### 1. [Physics-Informed Feature Engineering](https://www.kaggle.com/code/ibongarciagomez/nb-feature-engineering)
 This notebook establishes a comprehensive signal processing pipeline that converts raw TPA-TCT current waveforms into a 110-dimensional multi-domain feature vector. By applying hierarchical PCA across temporal, derivative, and frequency domains, the system captures complex asymmetric charge transport modes that are otherwise obscured in global variance. Furthermore, the pipeline leverages C₂v group theory to extract irreducible representation (Irrep) features, which provide a dedicated physical basis for resolving quadrant sign ambiguities. Final feature importance is validated through Mutual Information ranking and spatial stratification.
 
-### 2. [Multi-Domain CNN Training Pipeline](https://www.kaggle.com/code/igarciag/02-multi-domain-cnn-training-pipeline)
+### 2. [Multi-Domain CNN Training Pipeline](https://www.kaggle.com/code/ibongarciagomez/nb-model-training)
 This work implements a specialized dual-branch neural network designed for high-precision hit reconstruction in 3D-trench silicon detectors. The architecture fuses 2-channel waveform data with a physics-informed MLP branch, feeding a multi-task framework that simultaneously performs fundamental domain regression and quadrant classification. Through a two-phase optimization strategy combining Cosine Annealing Warm Restarts with a plateau-based fine-tuning stage, the model achieves a sub-micron fundamental resolution of 0.80 µm.
 
 ### 3. [Bayesian HPO Optimization](https://www.kaggle.com/code/ibongarciagomez/nb03-optuna-hpo-optimization)
